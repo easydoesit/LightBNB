@@ -28,4 +28,4 @@ The following queries are used in the datbase.js file
 - addProperty
 
 ## final Product
-!["Screenshot of listings"](https://github.com/easydoesit/LightBnB/LightBnB_WebApp/blob/master/docs/TinyApp01.png)
+!["Screenshot of listings"](https://github.com/easydoesit/LightBNB/blob/main/LightBnB_WebApp/docs/LightBnb%20Listngs.png)
