@@ -29,3 +29,5 @@ The following queries are used in the datbase.js file
 
 ## final Product
 !["Screenshot of listings"](https://github.com/easydoesit/LightBNB/blob/main/LightBnB_WebApp/docs/LightBnb%20Listngs.png)
+
+!["Screenshot of ERD"](https://github.com/easydoesit/LightBNB/blob/main/LightBnB_WebApp/docs/LightBnB_db_diagram.png)
