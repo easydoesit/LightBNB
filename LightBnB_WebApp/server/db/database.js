@@ -1,4 +1,3 @@
-const properties = require('./json/properties.json');
 const { Pool } = require('pg');
 
 const pool = new Pool({
@@ -22,7 +21,7 @@ const getUserWithEmail = function(email) {
       return response.rows[0];
     });
 };
-exports.getUserWithEmail = getUserWithEmail;
+
 
 /**
  * Get a single user from the database given their id.
@@ -36,7 +35,7 @@ const getUserWithId = function(id) {
       return response.rows[0];
     });
 };
-exports.getUserWithId = getUserWithId;
+// exports.getUserWithId = getUserWithId;
 
 
 /**
@@ -51,7 +50,6 @@ const addUser =  function(user) {
       return response.rows;
     });
 };
-exports.addUser = addUser;
 
 /// Reservations
 
@@ -77,7 +75,7 @@ const getAllReservations = function(guest_id, limit = 10) {
       return response.rows;
     });
 };
-exports.getAllReservations = getAllReservations;
+
 
 /// Properties
 
@@ -156,7 +154,6 @@ const getAllProperties = (options, limit = 10) => {
       console.log(err.message);
     });
 };
-exports.getAllProperties = getAllProperties;
 
 
 /**
@@ -203,4 +200,6 @@ const addProperty = function(property) {
       return response.rows[0];
     });
 };
-exports.addProperty = addProperty;
+
+
+module.exports = { getUserWithEmail, getUserWithId, addUser, getAllReservations, getAllProperties, addProperty };
